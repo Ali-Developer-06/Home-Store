@@ -1,0 +1,723 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+@font-face {
+    font-family: "DIN Next";
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+    src: url("//myhomestore.pk/cdn/fonts/din_next/dinnext_n5.9de62f474792d83a5c7487ba13c73b05f03f03c7.woff2?h1=bXlob21lc3RvcmUucGs&h2=bXlob21lc3RvcmUtY29tLXBrLmFjY291bnQubXlzaG9waWZ5LmNvbQ&hmac=08f874ab33d9cc5a2f515d963a95eb3e1de4d4009879665b3e38ed16f6b29f49") format("woff2"),
+        url("//myhomestore.pk/cdn/fonts/din_next/dinnext_n5.780618dec464e6222d24888730ca26e0ca6ad6af.woff?h1=bXlob21lc3RvcmUucGs&h2=bXlob21lc3RvcmUtY29tLXBrLmFjY291bnQubXlzaG9waWZ5LmNvbQ&hmac=a30263fb853ea39d4344b03d670e642dfc7b305265a96fb49126f0d01fef0796") format("woff");
+}
+@font-face {
+    font-family: "DIN Next";
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: url("//myhomestore.pk/cdn/fonts/din_next/dinnext_n4.438c249fdbceeefafa64221353c5ece2fdb8ae14.woff2?h1=bXlob21lc3RvcmUucGs&h2=bXlob21lc3RvcmUtY29tLXBrLmFjY291bnQubXlzaG9waWZ5LmNvbQ&hmac=035abd7fc6acbc0979ef2d94da033ecaff3ffc2649250f02cba0c2372a833495") format("woff2"),
+        url("//myhomestore.pk/cdn/fonts/din_next/dinnext_n4.ba1a214c52f07ec250a5179209eb84e73639e1c9.woff?h1=bXlob21lc3RvcmUucGs&h2=bXlob21lc3RvcmUtY29tLXBrLmFjY291bnQubXlzaG9waWZ5LmNvbQ&hmac=349b87779dd066850a07a1ae60fa6b8423ee0ea64abbeb5cc104184afb6d8b6d") format("woff");
+}
+@font-face {
+    font-family: "DIN Next";
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+    src: url("//myhomestore.pk/cdn/fonts/din_next/dinnext_n5.9de62f474792d83a5c7487ba13c73b05f03f03c7.woff2?h1=bXlob21lc3RvcmUucGs&h2=bXlob21lc3RvcmUtY29tLXBrLmFjY291bnQubXlzaG9waWZ5LmNvbQ&hmac=08f874ab33d9cc5a2f515d963a95eb3e1de4d4009879665b3e38ed16f6b29f49") format("woff2"),
+        url("//myhomestore.pk/cdn/fonts/din_next/dinnext_n5.780618dec464e6222d24888730ca26e0ca6ad6af.woff?h1=bXlob21lc3RvcmUucGs&h2=bXlob21lc3RvcmUtY29tLXBrLmFjY291bnQubXlzaG9waWZ5LmNvbQ&hmac=a30263fb853ea39d4344b03d670e642dfc7b305265a96fb49126f0d01fef0796") format("woff");
+}
+@font-face {
+    font-family: "DIN Next";
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+    src: url("//myhomestore.pk/cdn/fonts/din_next/dinnext_i5.6181c1c6bd79a156767a82929b9c449117ad57ca.woff2?h1=bXlob21lc3RvcmUucGs&h2=bXlob21lc3RvcmUtY29tLXBrLmFjY291bnQubXlzaG9waWZ5LmNvbQ&hmac=8c09f241679aa7db3a19bf62cd487d3585d0da29fdeabc01220c6b84cf6007b6") format("woff2"),
+        url("//myhomestore.pk/cdn/fonts/din_next/dinnext_i5.8a0b77e365efc8daea9a021f4043f6d7046af5bb.woff?h1=bXlob21lc3RvcmUucGs&h2=bXlob21lc3RvcmUtY29tLXBrLmFjY291bnQubXlzaG9waWZ5LmNvbQ&hmac=7b04ab99306200ef5b4d69c099e543505dde1634124b1e8b3f3d437fee5c478b") format("woff");
+}
+@font-face {
+    font-family: "DIN Next";
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    src: url("//myhomestore.pk/cdn/fonts/din_next/dinnext_n7.57888b0b2051a4dba7d02aad7ca64db99eca3cf1.woff2?h1=bXlob21lc3RvcmUucGs&h2=bXlob21lc3RvcmUtY29tLXBrLmFjY291bnQubXlzaG9waWZ5LmNvbQ&hmac=4d2805000ec19bb303b3a27427c647453d2ace751c1e28f6dcf006f56283ad83") format("woff2"),
+        url("//myhomestore.pk/cdn/fonts/din_next/dinnext_n7.8ca52ee0f403ce0c89c90387f16284e4637c1b10.woff?h1=bXlob21lc3RvcmUucGs&h2=bXlob21lc3RvcmUtY29tLXBrLmFjY291bnQubXlzaG9waWZ5LmNvbQ&hmac=143150571703ac9f61980b3b77f9071f474eb11a264317b224fb3f7fdb8a36fb") format("woff");
+}
+@font-face {
+    font-family: "DIN Next";
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+    src: url("//myhomestore.pk/cdn/fonts/din_next/dinnext_i4.61ded265c0c537a08a3ef6c1f78e76a5f3be91c9.woff2?h1=bXlob21lc3RvcmUucGs&h2=bXlob21lc3RvcmUtY29tLXBrLmFjY291bnQubXlzaG9waWZ5LmNvbQ&hmac=0ab9b6b640d988a9ed829055c46c08d5e9740a8f217ce1620296bf236017bd24") format("woff2"),
+        url("//myhomestore.pk/cdn/fonts/din_next/dinnext_i4.09dd19acb435d364f8a7263a588c573108d49efc.woff?h1=bXlob21lc3RvcmUucGs&h2=bXlob21lc3RvcmUtY29tLXBrLmFjY291bnQubXlzaG9waWZ5LmNvbQ&hmac=b254d642044fc4c3a71a6de409bd6f73125c64b62d19902953e9ae40c25d81f3") format("woff");
+}
+@font-face {
+    font-family: "DIN Next";
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+    src: url("//myhomestore.pk/cdn/fonts/din_next/dinnext_i7.3e0968fa491d382704988ea5c9fc6209193f03d0.woff2?h1=bXlob21lc3RvcmUucGs&h2=bXlob21lc3RvcmUtY29tLXBrLmFjY291bnQubXlzaG9waWZ5LmNvbQ&hmac=4b8c793a98136428f76ebbc5da9c391d5a4be3b7f06bcb0d2539bd62fbd32b67") format("woff2"),
+        url("//myhomestore.pk/cdn/fonts/din_next/dinnext_i7.28611b7c75be07249f4251b10e48a8d9f8dbf8ba.woff?h1=bXlob21lc3RvcmUucGs&h2=bXlob21lc3RvcmUtY29tLXBrLmFjY291bnQubXlzaG9waWZ5LmNvbQ&hmac=76d06b32a6afb83f569ef59a9e87b126a2d3761bca6ff83c57d39ed795f39baf") format("woff");
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+/* .both{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+} */
+.header{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: #000;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.logo img{
+    width: 150px;
+}
+.searchBox{
+    border-radius: 5px;
+    background-color: #fff;
+}
+.searchBox input{
+    height: 45px;
+    width: 455px;
+    border: none;
+    outline: none;
+    color: #000;
+    padding-left: 20px;
+    border-radius: 5px;
+}
+#search-product-type{
+    width: 200px;
+    height: 45px;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    border-left: 1px solid rgba(255, 0, 0, 0.4);
+}
+.searchBox span{
+    padding: 12px 0;
+    background-color: #677279;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.searchBox span i{
+    width: 49px; 
+    font-size: 20px;
+    color: #fff;
+}
+.myAccount{
+    border-right: 1px solid rgba(255, 0, 0, 0.5);
+}
+.myAccount h6{
+    color: red;
+    font-family: 'Roboto', sans-serif;
+}
+.myAccount h5{
+    font-size: 16px;
+    color: #fff;
+}
+.myAccount i{
+    color: #fff;
+}
+.addToCart{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+.addToCart i{
+    padding-right: 10px;
+    font-size: 30px;
+}
+.addToCart h5{
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+/* navbar styling start */
+
+.navbar{
+    height: 120px;
+    background-color: #F2F4F5;
+    cursor: pointer;
+}
+.selectTag{
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+}
+.navbar li{
+    text-align: center;
+    width: 120px;
+    height: 40px;
+    flex-direction: column;
+    list-style: none;
+    font-weight: 500;
+    font-size: 14px;
+}
+.navbar li:hover{
+    color: #677279;
+}
+
+/* main section styling */
+
+.card{
+    height: 300px;
+    width: 350px;
+}
+.cardBody{
+    margin: 0 40px;
+}
+.cardContainer{
+    margin: 0 10px;
+}
+.card-img{
+    height: 300px;
+}
+.card-img-overlay button{
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #000;
+}
+#card-1{
+    background-color: #D4D4D4;
+}
+.card-img-1{
+    padding: 75px 0 0 100px;
+}
+#card-2{
+    margin: 80px 80px
+}
+#card-1, #card-2, #card-4, #card-5, #card-6{
+    border: none;
+}
+#card-3{
+    border: .5px solid lightgray;
+}
+#card-3 button{
+    position: absolute;
+    bottom: 20px;
+    left: 100px
+}
+#card-4{
+    background-color: #8FA8BC;
+}
+.card-img-4{
+    padding: 50px 0 0 50px;
+}
+#card-5{
+    background-color: #AAA59F;
+}
+.card-img-5{
+    padding: 50px 0 0 50px;
+}
+#card-6{
+    background-color: #F8F1E9;
+}
+.card-img-6{
+    padding: 50px 0 0 50px;
+}
+
+/* Embroidered styling start  */
+
+.Embroidered-sec-1 h3{
+    padding: 20px 10px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+.Embroidered-sec-1 p{
+    padding: 0 10px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+.Embroidered-sec-1 button{
+    padding: 10px 30px;
+    margin-left: 10px;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+    border-radius: 2px;
+}
+/* card carousel */
+
+#cardCarousel{
+    height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.carousel-sec{
+    position: relative;  
+    height: 450px;
+    width: 700px;
+    display: flex;
+    align-items: center;
+}
+.swiper{
+    width: 400px;
+}
+.swiper-wrapper{
+    display: flex;
+    margin: 0 20px;
+}
+.cardCar{
+    position: relative;
+    background: #fff;
+    height: 350px;
+    width: 210px;
+    margin: 20px 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.cardCar .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.carousel-sec .cardCar .image{
+    height: 200px;
+    width: 200px;
+}
+.carousel-sec .cardCar .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: 3px solid #fff;
+}
+.name-profession{
+    padding-left: 10px;
+}
+.name-profession .name{
+    font-size: 12px;
+}
+.name-profession .profession{
+    font-size:14px;
+}
+.name-profession .from{
+    color: red;
+}
+.name-profession .lineCross{
+    color: #000;
+    padding-left: 50px;
+}
+.name-profession .price-1{
+    color: red;
+}
+.name-profession .price{
+    color: #636D74;
+    font-weight: bold;
+}
+
+/* productSelection styling start */
+.collectionCard{
+    width: auto;
+    margin: 0 -12px;
+}
+.product-sec-1{
+    margin-left: 60px;
+}
+.product-sec-1 .card img{
+    height: 500px;
+}
+.product-sec-1 .card-img-overlay{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.product-sec-1 button{
+    background-color: #4F5558;
+}
+.collectionCard-2{
+    width: 450px;
+    margin: 0 -12px;
+}
+.product-sec-2{
+    margin-left: 30px;
+}
+.product-sec-2 .card img{
+    height: 500px;
+}
+.product-sec-2 .card-img-overlay{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.product-sec-2 button{
+    background-color: #4F5558;
+}
+.product-sec-3{
+    margin-left: 55px;
+}
+.subProduct-1{
+    height: 240px;
+    margin: 0 -14px;
+}
+.subProduct-card-1{
+    width: 300px;
+}
+.subProduct-card-1 img{
+    margin: 0 -10px;
+    height: 235px;
+}
+.subProduct-card-1 .card-img-overlay{
+    margin: 0 -10px;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+.subProduct-card-1 button{
+    background-color: #4F5558;
+}
+.subProduct-2{
+    height: 240px;
+    margin: 0 -14px;
+}
+
+/* Our Collection styling start */
+
+.ourCollection{
+    padding: 0 40px;
+}
+.collection-sec img{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+}
+.collection-sec h6{
+    text-align: center;
+}
+
+/* Feature Product styling start  */
+
+.FeaturedProduct{
+    margin: 0 50px;
+    background-color: #F3F5F6;
+}
+.featureImages{
+    height: 500px;
+    width: 110px;
+    overflow-y: scroll;
+}
+.featureImages img{
+    margin: 10px 0;
+    width: 70px;
+    height: 70px;
+}
+.featureMainImg img{
+    margin-left: 40px;
+    width: 400px;
+    height: 400px;
+}
+.lastFeature{
+    font-family: "DIN Next", sans-serif;
+}
+.lastFeature h4{
+    font-weight: bold;
+}
+.lastPrice{
+    width: 150px;
+    text-align: center;
+    color: #fff;
+    border-radius: 4px;
+    background-color: red;
+}
+.mhsIcon{
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mhsIcon label{
+    color: #677279;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.mhsIcon span i{
+    padding: 5px;
+    border-radius: 50px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #9E9FA0;
+}
+.completeDuvet h3{
+    padding: 20px 0;
+    font-weight: bolder;
+    font-size: 24px;
+}
+.completeDuvet h4{
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+.completeDuvet p{
+    letter-spacing: .5px;
+}
+.Article{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+.Article p{
+    padding: 0 10px;
+    font-weight: bold;
+}
+.double{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+.double p{
+    padding: 0 10px;
+}
+.king{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+.king p{
+    padding: 0 10px;
+}
+.productPrice{
+    display: flex;
+    align-items: center;
+}
+.productPrice label{
+    color: red;
+    font-size: 22px;
+    padding: 0 30px;
+}
+.productPrice span{
+    font-size: 16px;
+    padding: 0 30px;
+}
+.quantity, .number{
+    display: flex;
+    align-items: center;
+}
+.number p{
+    padding: 0 30px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.lastFeature button{
+    margin: 20px 0;
+    padding: 10px 80px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 2px;
+    background-color: #000;
+}
+.mustard p{
+    font-weight: bold;
+}
+.mustard button{
+    margin-top: -20px;
+    padding: 20px;
+    border: 2px solid #636D74;
+    background-color: #F3F5F6;
+}
+.chair p{
+    font-weight: bold;
+}
+.chair button{
+    margin-top: -20px;
+    padding: 10px 20px;
+    color: #636D74;
+    border: 1.5px solid #636D74;
+    background-color: #F3F5F6;
+}
+
+/* paymetMethod styling start  */
+
+.paymetMethod{
+    padding-top: 50px;
+    font-family: "DIN Next", sans-serif;
+}
+.paymetMethod h4{
+    font-weight: bold;
+}
+.paymetMethod p{
+    padding: 10px 0;
+}
+.paymetMethod button{
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: #000;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+/* newsLetter styling start  */
+
+.newsLetter{
+    height: 220px;
+    text-align: center;
+    color: #fff;
+    background-color: #353535;
+    font-family: "DIN Next", sans-serif;
+}
+.newsLetter h4{
+    font-weight: bold;
+    padding-top: 30px;
+}
+.newsLetter p{
+    padding-top: 15px;
+}
+.newsLetter div input{
+    height: 45px;
+    width: 300px;
+    padding-left: 20px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+}
+.newsLetter div button{
+    margin-left: 10px;
+    padding: 12px 30px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: #000;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+/* LuxuryBedding styling start  */
+
+.LuxuryBedding{
+    background: url(Images/limelight_2.jpg);
+    background-size: cover;
+    height: 400px;
+    text-align: center;
+}
+.LuxuryBedding h4{
+    padding-top: 200px;
+}
+
+/* addressSec styling start  */
+
+.addressSec{
+    height: 150px;
+    padding: 0 20px;
+}
+.addSec-1{
+    padding-top: 40px;
+}
+.addSec-1 i{
+    padding: 0 20px;
+    font-size: 30px;
+}
+.addSec-1 h5{
+    font-size: 18px;
+}
+.addSec-1 p{
+    padding-left: 70px;
+}
+
+/* fotter styking start  */
+
+footer{
+    padding: 30px;
+    background-color: #000;
+    color: #fff;
+    font-family: "DIN Next", sans-serif;
+}
+.fot-sec-1 h6{
+    font-size: 13px;
+    font-weight: bold;
+}
+.fot-sec-1 p{
+    line-height: 30px;
+}
+.fot-sec-1 .copyRight{
+    padding-top: 250px;
+}
+.fot-sec-2 h6{
+    font-size: 13px;
+    font-weight: bold;
+}
+.fot-sec-2 li{
+    list-style: none;
+}
+.fot-sec-2 li a{
+    color: #fff;
+    text-decoration: none;
+    line-height: 30px;
+}
+.fot-sec-2 li a:hover{
+    text-decoration: underline;
+}
+.fot-sec-3 h6{
+    font-size: 13px;
+    font-weight: bold;
+}
+.fot-sec-3 li{
+    list-style: none;
+}
+.fot-sec-3 li a{
+    color: #fff;
+    text-decoration: none;
+    line-height: 30px;
+}
+.fot-sec-3 li a:hover{
+    text-decoration: underline;
+}
+.fot-sec-4 h6{
+    font-size: 13px;
+    font-weight: bold;
+}
+.fot-sec-4 .adres{
+    line-height: 30px;
+}
+.fot-sec-4 h5{
+    font-size: 16px;
+    font-weight: bold;
+}
+.emailAdress a{
+    text-decoration: none;
+    color: #00b5cf;
+    font-weight: bold;
+}
+.emailAdress a:hover{
+    color: #15889c;
+}
+.fot-sec-4 label{
+    padding-top: 30px;
+}
+.fot-sec-4 input{
+    margin-top: 30px;
+    width: 300px;
+    height: 45px;
+    outline: none;
+    padding-left: 10px;
+    border-radius: 3px;
+}
+.fot-sec-4 button{
+    margin: 10px 0 20px 0;
+    padding: 10px 30px;
+    border: none;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #00badb;
+}
+.fot-sec-4 button:hover{
+    background-color: #15889c;
+}
+.footerIcon{
+    margin-left: 140px;
+}
+.footerIcon i{
+    padding: 7px;
+    border-radius: 50px;
+    background-color: #9E9FA0;
+}

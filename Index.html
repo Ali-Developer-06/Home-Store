@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Style.css">
+    <!-- bootstrap Links -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <!-- boxicon link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>My Home Store</title>
+</head>
+<body>
+    <!------------------------------ header section ------------------------------>
+
+    <section class="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="logo">
+                        <img src="Images/myhome_store_logo_160x@2x.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="searchBox">
+                        <input type="text" placeholder="Search...">
+                        <select id="search-product-type">
+                            <option value="" selected="selecte">All categories</option><option value="Aprons">Aprons</option><option value="Baby Cot">Baby Cot</option><option value="Baratta Duvet">Baratta Duvet</option><option value="Bath Mat">Bath Mat</option><option value="Bath Robe">Bath Robe</option><option value="Bath Set">Bath Set</option><option value="Bath Towel">Bath Towel</option><option value="Bathroom Cabinets">Bathroom Cabinets</option><option value="Bathroom Rack">Bathroom Rack</option><option value="Bed Runner">Bed Runner</option><option value="Bedspread">Bedspread</option><option value="Blanket">Blanket</option><option value="Box Pleated Duvet">Box Pleated Duvet</option><option value="Bridal Collection">Bridal Collection</option><option value="Chair">Chair</option><option value="Clothes Storage Bag">Clothes Storage Bag</option><option value="coffe table">coffe table</option><option value="Cotton Cushion">Cotton Cushion</option><option value="Cotton Duck">Cotton Duck</option><option value="Cotton Lace Duvet Set">Cotton Lace Duvet Set</option><option value="Curtain">Curtain</option><option value="Curtains">Curtains</option><option value="Decoration Item">Decoration Item</option><option value="Duvet">Duvet</option><option value="Duvet Covers">Duvet Covers</option><option value="Duvet With Lace">Duvet With Lace</option><option value="Embroidered">Embroidered</option><option value="Embroidered Duvet">Embroidered Duvet</option><option value="Embroidered Duvet Set">Embroidered Duvet Set</option><option value="Embroidered Velvet">Embroidered Velvet</option><option value="embroidered velvet duvet">embroidered velvet duvet</option><option value="Embroidery Duvet Set">Embroidery Duvet Set</option><option value="Filling">Filling</option><option value="Fitted Sheet">Fitted Sheet</option><option value="Frame">Frame</option><option value="Gold with White">Gold with White</option><option value="Home &amp; Garden">Home &amp; Garden</option><option value="Hotel Linen">Hotel Linen</option><option value="kids Bedsheet">kids Bedsheet</option><option value="Kids Foot Mat">Kids Foot Mat</option><option value="kids Rug">kids Rug</option><option value="Kids Wall clock">Kids Wall clock</option><option value="Kids wall Shelves">Kids wall Shelves</option><option value="Kitchen Item">Kitchen Item</option><option value="Kitchen Items">Kitchen Items</option><option value="Lanterns">Lanterns</option><option value="Lotus Leaf Duvet">Lotus Leaf Duvet</option><option value="Lounge Chair">Lounge Chair</option><option value="Luxury Baratta Duvet">Luxury Baratta Duvet</option><option value="Luxury Duvet Set">Luxury Duvet Set</option><option value="Luxury Duvet Set Embroidered">Luxury Duvet Set Embroidered</option><option value="Luxury Embroidered">Luxury Embroidered</option><option value="Luxury Lace Duvet">Luxury Lace Duvet</option><option value="Luxury Pintuck Duvet">Luxury Pintuck Duvet</option><option value="Luxury Pleated">Luxury Pleated</option><option value="Luxury Velvet Duvet Set">Luxury Velvet Duvet Set</option><option value="Mattress Protector">Mattress Protector</option><option value="Mattress topper">Mattress topper</option><option value="Metal Bed Frame">Metal Bed Frame</option><option value="Napkins">Napkins</option><option value="New Embroidered Duvet Set">New Embroidered Duvet Set</option><option value="Ottoman">Ottoman</option><option value="Oxford Duvet">Oxford Duvet</option><option value="Patch Barata">Patch Barata</option><option value="PERSONALIZED BEDDING">PERSONALIZED BEDDING</option><option value="Pillow Bed">Pillow Bed</option><option value="Pinch Pleated Cushion">Pinch Pleated Cushion</option><option value="PINCH PLEATS DUVET">PINCH PLEATS DUVET</option><option value="Pintuck Duvet">Pintuck Duvet</option><option value="Plain Dyed Curtain">Plain Dyed Curtain</option><option value="Plain Dyed Duvet">Plain Dyed Duvet</option><option value="plant Holder">plant Holder</option><option value="Pleated Duvet">Pleated Duvet</option><option value="Pleates">Pleates</option><option value="Prayer Mat Set">Prayer Mat Set</option><option value="Pret">Pret</option><option value="Printed Bedsheet">Printed Bedsheet</option><option value="Printed Bedsheet (Cotton)">Printed Bedsheet (Cotton)</option><option value="Printed Curtain">Printed Curtain</option><option value="Printed Cushion">Printed Cushion</option><option value="Printed duvet set">Printed duvet set</option><option value="Quilted Sofa Cover">Quilted Sofa Cover</option><option value="Rack">Rack</option><option value="Ruched Lace Duvet">Ruched Lace Duvet</option><option value="Ruffle Duvet Set">Ruffle Duvet Set</option><option value="Sateen Bedspread">Sateen Bedspread</option><option value="Shelves">Shelves</option><option value="Side Table">Side Table</option><option value="Side Table Gold With White">Side Table Gold With White</option><option value="SILK DUVET">SILK DUVET</option><option value="SILK PINTUCK DUVET">SILK PINTUCK DUVET</option><option value="Sofa Throw">Sofa Throw</option><option value="Stand">Stand</option><option value="stool">stool</option><option value="STRIPE DUVET">STRIPE DUVET</option><option value="STYLISH STRIPE DUVET">STYLISH STRIPE DUVET</option><option value="Table cover">Table cover</option><option value="Table Mats">Table Mats</option><option value="Table Runner">Table Runner</option><option value="Tables">Tables</option><option value="Towel Set With Lace">Towel Set With Lace</option><option value="Trolley">Trolley</option><option value="Twisted pleated duvet">Twisted pleated duvet</option><option value="Upholstered Bench">Upholstered Bench</option><option value="Velvet Bedspread">Velvet Bedspread</option><option value="Velvet Curtain">Velvet Curtain</option><option value="Velvet Cushion">Velvet Cushion</option><option value="Velvet Pinch Pleat Set">Velvet Pinch Pleat Set</option><option value="velvet pleated">velvet pleated</option>
+                        </select>
+                        <span>
+                            <i class='bx bx-search'></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="myAccount">
+                        <h6>Login / Signup</h6>
+                        <h5>My Account <i class='bx bx-chevron-down'></i> </h5>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <div class="addToCart">
+                        <i class='bx bx-cart'></i>
+                        <h5>Cart</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!------------------------------ navbar section ------------------------------>
+
+    <section class="navbar">
+        <div class="container-fluid d-flex">
+            <div class="row">
+                <div class="col-md-12 selectTag">
+                    <li>Beeding <i class='bx bx-chevron-down'></i></li>
+                    <li>Hotel Linen</li>
+                    <li>Prayer Mat</li>
+                    <li>Kids <i class='bx bx-chevron-down'></i></li>
+                    <li>Kitchen <i class='bx bx-chevron-down'></i></li>
+                    <li>Curtains</li>
+                    <li>Decore <i class='bx bx-chevron-down'></i></li>
+                    <li>Bath <i class='bx bx-chevron-down'></i></li>
+                    <li>Furniture <i class='bx bx-chevron-down'></i></li>
+                    <li class="byBudget">Shop By Budget <i class='bx bx-chevron-down'></i></li>
+                    <li>Events <i class='bx bx-chevron-down'></i></li>
+                    <li>MHS Interior</li>
+                    <li>UPTO 70% OFF</li>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!------------------------------ main section ------------------------------>
+
+    <section class="main pt-5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 cardBody">
+                    <div class="card cardContainer" id="card-1">
+                        <img src="" class="card-img card-img-1" alt="">
+                        <div class="card-img-overlay pt-5">
+                            <h5 class="card-title pt-2">...</h5>
+                            <p class="card-text">...</p>
+                            <button>...</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 cardBody">
+                    <div class="card text-bg-dark cardContainer">
+                        <img src="" class="card-img" alt="">
+                        <div class="card-img-overlay" id="card-2">
+                            <h5 class="card-title mb-4">...</h5>
+                            <p class="card-text">...</p>
+                            <button>...</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 cardBody">
+                    <div class="card text-bg-dark cardContainer" id="card-3">
+                        <img src="" class="card-img" alt="">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">...</h5>
+                            <p class="card-text">...</p>
+                            <button>...</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 pt-5 cardBody">
+                    <div class="card cardContainer" id="card-4">
+                        <img src="" class="card-img card-img-4" alt="">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title pt-4">...</h5>
+                            <p class="card-text">...</p>
+                            <button>...</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 cardBody pt-5">
+                    <div class="card cardContainer" id="card-5">
+                        <img src="" class="card-img card-img-5" alt="">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">...</h5>
+                            <p class="card-text">...</p>
+                            <button>...</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 cardBody pt-5">
+                    <div class="card cardContainer" id="card-6">
+                        <img src="" class="card-img card-img-6" alt="">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">...</h5>
+                            <p class="card-text">...</p>
+                            <button>...</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------------------------------ Embroidered section ------------------------------>
+
+    <section class="Embroidered pt-5">
+        <div class="container">
+            <div class="row" style="background-color: #7B8A93;">
+                <div class="col-md-5 Embroidered-sec-1">
+                    <h3>Embroidered Collection</h3>
+                    <p>Your Bed's Choice ...</p>
+                    <button>Learn More</button>
+                    <img src="Images/45645456_1000x.png" width="480px" alt="">
+                </div>
+                <div class="col-md-7">
+                    <div id="cardCarousel">
+                        <section class="carousel-sec">
+                            <div class="swiper mySwiper container">
+                                <div class="swiper-wrapper content">
+                                    <div class="swiper-slide cardCar">
+                                        <div class="card-content">
+                                            <div class="image">
+                                                <img src="Images/Supreme.jpg" alt="">
+                                            </div>
+                                        <div class="name-profession">
+                                            <span class="name">MHS Embroidered</span> <br>
+                                            <span class="profession">Mix and Match Embroidery Duvet Set</span> <br>
+                                            <span class="from"> From <span class="lineCross"><strike>Rs 32,999.00</strike></span> </span> <br>
+                                            <span class="price-1">Rs 27,500.00</span>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide cardCar">
+                                        <div class="card-content">
+                                            <div class="image">
+                                                <img src="Images/Supreme.jpg" alt="">
+                                            </div>
+                                        <div class="name-profession">
+                                            <span class="name">MHS Embroidered</span> <br>
+                                            <span class="profession">Mix and Match Embroidery Duvet Set</span> <br>
+                                            <span class="price">Rs 27,500.00</span>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide cardCar">
+                                        <div class="card-content">
+                                            <div class="image">
+                                                <img src="Images/Supreme.jpg" alt="">
+                                            </div>
+                                        <div class="name-profession">
+                                            <span class="name">MHS Embroidered</span> <br>
+                                            <span class="profession">Mix and Match Embroidery Duvet Set</span> <br>
+                                            <span class="price">Rs 27,500.00</span>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </section>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!------------------------------ product selection section ------------------------------>
+
+    <section class="productSelection pt-5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 product-sec-1">
+                    <div class="card cardContainer collectionCard">
+                        <img src="Images/curten.jpg" alt="">
+                        <div class="card-img-overlay px-4 pt-4 text-white">
+                            <h5 class="card-title ">Curtain Collection</h5>
+                            <p class="card-text">Your Home Decore...</p>
+                            <button>Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 product-sec-2">
+                    <div class="card cardContainer collectionCard-2">
+                        <img src="Images/sofa.jpg" alt="">
+                        <div class="card-img-overlay px-4 pt-4 text-white">
+                            <h5 class="card-title ">Curtain Collection</h5>
+                            <p class="card-text">Your Home Decore...</p>
+                            <button>Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 product-sec-3">
+                    <div class="subProduct-sec">
+                        <div class="subProduct-1">
+                            <div class="card cardContainer subProduct-card-1">
+                                <img src="Images/bed.jpg" alt="">
+                                <div class="card-img-overlay text-white">
+                                    <h5 class="card-title">Curtain Collection</h5>
+                                    <p class="card-text pb-4">Your Home Decore...</p>
+                                    <button>Learn More</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="subProduct-2 mt-4">
+                            <div class="card cardContainer subProduct-card-1">
+                                <img src="Images/towel.jpg" alt="">
+                                <div class="card-img-overlay text-white">
+                                    <h5 class="card-title">Curtain Collection</h5>
+                                    <p class="card-text pb-4">Your Home Decore...</p>
+                                    <button>Learn More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!------------------------------ Kids section ------------------------------>
+
+    <section class="Kids pt-5">
+        <div class="container">
+            <div class="row" style="background-color: #E1F1FF;">
+                <div class="col-md-5 Embroidered-sec-1">
+                    <h3 class="text-black">Embroidered Collection</h3>
+                    <p class="text-black">Let Your Kid's Future Be Stylish...</p>
+                    <button class="bg-black text-white">Learn More</button>
+                    <img src="Images/kids.png" width="480px" alt="">
+                </div>
+                <div class="col-md-7">
+                    <div id="cardCarousel">
+                        <section class="carousel-sec">
+                            <div class="swiper mySwiper container">
+                                <div class="swiper-wrapper content">
+                                    <div class="swiper-slide cardCar">
+                                        <div class="card-content">
+                                            <div class="image">
+                                                <img src="Images/kid bed.jpg" alt="">
+                                            </div>
+                                        <div class="name-profession">
+                                            <span class="name">MHS Kids</span> <br>
+                                            <span class="profession">Light Blue Baby Cot Set</span> <br>
+                                            <span class="from"> From <span class="lineCross"><strike>Rs 9,999.00</strike></span> </span> <br>
+                                            <span class="price-1">Rs 6,510.00</span>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide cardCar">
+                                        <div class="card-content">
+                                            <div class="image">
+                                                <img src="Images/kid-bed-2.jpeg" alt="">
+                                            </div>
+                                        <div class="name-profession">
+                                            <span class="name">MHS Kids</span> <br>
+                                            <span class="profession">Bloom Plain Pink Baby Cot Set</span> <br>
+                                            <span class="from"> From <span class="lineCross"><strike>Rs 9,999.00</strike></span> </span> <br>
+                                            <span class="price-1">Rs 6,110.00</span>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide cardCar">
+                                        <div class="card-content">
+                                            <div class="image">
+                                                <img src="Images/kid-bed-3.webp" alt="">
+                                            </div>
+                                        <div class="name-profession">
+                                            <span class="name">MHS Kids</span> <br>
+                                            <span class="profession">Pink & White Twinkle Baby Cot Set </span> <br>
+                                            <span class="from"> From <span class="lineCross"><strike>Rs 10,500.00</strike></span> </span> <br>
+                                            <span claKids">Rs 6.910.00</span>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </section>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!------------------------------ Furniture section ------------------------------>
+
+    <section class="Furniture pt-5">
+        <div class="container">
+            <div class="row" style="background-color: #929292;">
+                <div class="col-md-5 Embroidered-sec-1">
+                    <h3>Embroidered Collection</h3>
+                    <p>We Make Furniture To Decorate Your Home...</p>
+                    <button>Learn More</button>
+                    <img src="Images/furniture.png" width="480px" alt="">
+                </div>
+                <div class="col-md-7">
+                    <div id="cardCarousel">
+                        <section class="carousel-sec">
+                            <div class="swiper mySwiper container">
+                                <div class="swiper-wrapper content">
+                                    <div class="swiper-slide cardCar">
+                                        <div class="card-content">
+                                            <div class="image">
+                                                <img src="Images/chair-1.jpeg" alt="">
+                                            </div>
+                                        <div class="name-profession">
+                                            <span class="name">MHS Furniture</span> <br>
+                                            <span class="profession">Pulush Modern Tufted Accent Chair(one)  </span> <br>
+                                            <span class="from price"> From </span> <br>
+                                            <span class="price">Rs 9,999.00</span>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide cardCar">
+                                        <div class="card-content">
+                                            <div class="image">
+                                                <img src="Images/chair-2.jpg" alt="">
+                                            </div>
+                                        <div class="name-profession">
+                                            <span class="name">MHS Furniture</span> <br>
+                                            <span class="profession">Emily Dining Chair</span> <br>
+                                            <span class="from"> From <span class="lineCross"><strike>Rs 9,999.00</strike></span> </span> <br>
+                                            <span class="price-1">Rs 7,850.00</span>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide cardCar">
+                                        <div class="card-content">
+                                            <div class="image">
+                                                <img src="Images/chair-3.jpg" alt="">
+                                            </div>
+                                        <div class="name-profession">
+                                            <span class="name">MHS Furniture</span> <br>
+                                            <span class="profession">Light Blue Sofa Dining Chair</span> <br>
+                                            <span class="from"> From <span class="lineCross"><strike>Rs 12,500.00</strike></span> </span> <br>
+                                            <span class="price-1">Rs 10,500.00</span>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </section>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!------------------------------ Our Collection section ------------------------------>
+
+    <section class="ourCollection pt-5">
+        <div class="container-fluid">
+            <div class="row">
+                <h4 class="py-3 px-4">Our Collection</h4>
+                <div class="col-md-2 collection-sec">
+                    <img src="Images/bed.jpg" alt="">
+                    <h6>Bedding</h6>
+                </div>
+                <div class="col-md-2 collection-sec">
+                    <img src="Images/curten.jpg" alt="">
+                    <h6>Curtain</h6>
+                </div>
+                <div class="col-md-2 collection-sec">
+                    <img src="Images/sofa.jpg" alt="">
+                    <h6>Sofa</h6>
+                </div>
+                <div class="col-md-2 collection-sec">
+                    <img src="Images/chair-1.jpeg" alt="">
+                    <h6>Furniture</h6>
+                </div>
+                <div class="col-md-2 collection-sec">
+                    <img src="Images/cushion.jpeg" alt="">
+                    <h6>Duvet Set</h6>
+                </div>
+                <div class="col-md-2 collection-sec">
+                    <img src="Images/mattress.jpeg" alt="">
+                    <h6>Mattress Protector</h6>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!------------------------------ Featured product-1 section ------------------------------>
+
+    <section class="FeaturedProduct mt-5">
+        <div class="container-fluid">
+            <div class="row">
+                <h5 class="py-4">Featured product</h5>
+                <div class="col-md-1">
+                    <div class="featureImages">
+                        <img class="thumbnail" src="Product/1.jpg" alt="Thumbnail 1" onclick="displayImage('Product/1.jpg')">
+                        <img class="thumbnail" src="Product/8.jpg" alt="Thumbnail 2" onclick="displayImage('Product/8.jpg')">
+                        <img class="thumbnail" src="Product/2.jpg" alt="Thumbnail 3" onclick="displayImage('Product/2.jpg')">
+                        <img class="thumbnail" src="Product/4.jpg" alt="Thumbnail 4" onclick="displayImage('Product/4.jpg')">
+                        <img class="thumbnail" src="Product/5.jpg" alt="Thumbnail 5" onclick="displayImage('Product/5.jpg')">
+                        <img class="thumbnail" src="Product/6.jpg" alt="Thumbnail 6" onclick="displayImage('Product/6.jpg')">
+                        <img class="thumbnail" src="Product/7.jpg" alt="Thumbnail 7" onclick="displayImage('Product/7.jpg')">
+                        <img class="thumbnail" src="Product/8.jpg" alt="Thumbnail 8" onclick="displayImage('Product/8.jpg')">
+                        <img class="thumbnail" src="Product/1.jpg" alt="Thumbnail 9" onclick="displayImage('Product/1.jpg')">
+                        <img class="thumbnail" src="Product/2.jpg" alt="Thumbnail 10" onclick="displayImage('Product/2.jpg')">
+                        <img class="thumbnail" src="Product/9.jpg" alt="Thumbnail 11" onclick="displayImage('Product/9.jpg')">
+                        <img class="thumbnail" src="Product/10.jpg" alt="Thumbnail 12" onclick="displayImage('Product/10.jpg')">
+                        <img class="thumbnail" src="Product/9.jpg" alt="Thumbnail 13" onclick="displayImage('Product/9.jpg')">
+                        <img class="thumbnail" src="Product/11.jpg" alt="Thumbnail 14" onclick="displayImage('Product/11.jpg')">
+                    </div>
+                </div>
+                <div class="col-md-5 featureMainImg" id="displayed-image">
+                    <img src="Product/1.jpg" alt="">
+                </div>
+                <div class="col-md-6 lastFeature">
+                    <h4>Royal Blue Exquisite Embroidery Duvet Set</h4>
+                    <p class="lastPrice">Save Rs 19,549.00</p>
+                    <div class="mhsIcon">
+                        <label>MHS Embroidered</label>
+                        <span>
+                            <i class='bx bxl-facebook'></i>
+                            <i class='bx bxl-pinterest-alt'></i>
+                            <i class='bx bxl-twitter'></i>
+                            <i class='bx bx-envelope'></i>
+                        </span>
+                    </div>
+                    <div class="completeDuvet">
+                        <h3>Complete Duvet Set</h3>
+                        <h4>8 Piece</h4>
+                        <p>1 Quilt Cover Embroidered <br>
+                            2 Pillows Covers  <br>
+                            1 Bed sheet Plain <br>
+                            2 pillow Sham covers Plain <br>
+                            2 side cushion cover
+                        </p>
+                        <p>Fabric : Cotton satin 400tc <br>
+                            Design : European Style Embroidered <br>
+                            Grantee : 100% Color & Shrink <br>
+                            Made according to Export Standards  <br>
+                            Only Non-Chlorine Bleach when needed <br>
+                            Tumble Dry Low <br>
+                            Iron On Lowest Setting If Needed <br>
+                            Machine Wash : Less then 40°C <br>
+                            Wash Light Color separate <br>
+                            Export Quality
+                        </p>
+                    </div>
+                    <h3 class="fw-bold py-4">Size Guide</h3>
+                    <div class="Article">
+                        <p>Article</p>
+                        <p>Flat Sheet</p>
+                        <p>Duvet cover</p>
+                        <p>Pillow Sham Covers</p>
+                    </div>
+                    <div class="double">
+                        <p>DOUBLE</p>
+                        <p>95”X95” / 241cm X 241cm</p>
+                        <p>90”X95” / 228cm X 241cm</p>
+                        <p>19”X29”+2”/48cm X 74cm+ 20cm</p>
+                    </div>
+                    <div class="king">
+                        <p style="padding-right: 30px;">KING</p>
+                        <p>102”X95” / 260cm X 241cm</p>
+                        <p>100”X95”/ 254cm X 241cm</p>
+                        <p>19”X29”+2”/48cm X 74cm+ 5cm</p>
+                    </div>
+                    <div class="pillow">
+                        <h4>PILLOW SIZE:</h4>
+                        <div class="d-flex pt-4">
+                            <div>
+                                <p class="fw-bold">Article</p>
+                                <p>STANDARD PILLOW COVER</p>
+                            </div>
+                            <div class="px-5">
+                                <p class="fw-bold">Size</p>
+                                <p>19”X29”/48cm X 74cm</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="productPrice">
+                        <p class="fw-bold pt-3">Price:</p>
+                        <label for="">Rs.25,450.00</label>
+                        <span><strike>Rs.44,999.00</strike></span>
+                    </div>
+                    <div class="quantity">
+                        <p class="fw-bold">Quantity:</p>
+                        <div class="number">
+                            <p id="decrement">-</p>
+                            <p id="quant">0</p>
+                            <p id="increment">+</p>
+                        </div>
+                    </div>
+                    <button>Add to Cart</button>
+                    <button style="background-color: #4F5558; margin-left: 15px;">Buy it now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section>
+        <div itemscope itemtype='http://schema.org/Person' class='fiverr-seller-widget' style='display: inline-block;'>
+    <a itemprop='url' href=https://www.fiverr.com/ali_developer06 rel="nofollow" target="_blank" style='display: inline-block;'>
+        <div class='fiverr-seller-content' id='fiverr-seller-widget-content-06f8e0d1-dd18-46c9-87c7-30f6d62ae85f' itemprop='contentURL' style='display: none;'></div>
+        <div id='fiverr-widget-seller-data' style='display: none;'>
+            <div itemprop='name' >ali_developer06</div>
+            <div itemscope itemtype='http://schema.org/Organization'><span itemprop='name'>Fiverr</span></div>
+            <div itemprop='jobtitle'>Seller</div>
+            <div itemprop='description'>Looking for a skilled front-end developer on Fiverr? I'm an experienced professional specializing in HTML, CSS, and JavaScript. I create visually appealing and user-friendly websites that captivate audiences. With a keen eye for design and a focus on functionality, I bring your ideas to life. From responsive web development to cross-browser compatibility, I ensure your website performs flawlessly. With excellent communication and a commitment to delivering top-quality work, I'm ready to collaborate with you on Fiverr to enhance your online presence. Let's create an impressive website together!</div>
+        </div>
+    </a>
+        </div>
+        <script id='fiverr-seller-widget-script-06f8e0d1-dd18-46c9-87c7-30f6d62ae85f' src='https://widgets.fiverr.com/api/v1/seller/ali_developer06?widget_id=06f8e0d1-dd18-46c9-87c7-30f6d62ae85f' data-config='{"category_name":"\n                       Programming \u0026 Tech\n\n"}' async='true' defer='true'></script>
+    </section> -->
+        <!------------------------------ Featured product-2 section ------------------------------>
+
+    <section class="FeaturedProduct mt-5">
+        <div class="container-fluid">
+            <div class="row">
+                <h5 class="py-4">Featured product</h5>
+                <div class="col-md-1">
+                    <div class="featureImages">
+                        <img class="thumbnail" src="Product/f11.jpg" alt="Thumbnail 1" onclick="displayImg('Product/f11.jpg')">
+                        <img class="thumbnail" src="Product/f22.jpg" alt="Thumbnail 2" onclick="displayImg('Product/f22.jpg')">
+                        <img class="thumbnail" src="Product/f33.jpg" alt="Thumbnail 3" onclick="displayImg('Product/f33.jpg')">
+                    </div>
+                </div>
+                <div class="col-md-5 featureMainImg" id="display-img">
+                    <img src="Product/f11.jpg" alt="">
+                </div>
+                <div class="col-md-6 lastFeature">
+                    <h4>Curvarella Turmeric Mustard Velvet Chair</h4>
+                    <div class="mhsIcon">
+                        <label>MHS Furniture</label>
+                        <span>
+                            <i class='bx bxl-facebook'></i>
+                            <i class='bx bxl-pinterest-alt'></i>
+                            <i class='bx bxl-twitter'></i>
+                            <i class='bx bx-envelope'></i>
+                        </span>
+                    </div>
+                    <div class="completeDuvet">
+                        <h4>Product details</h4>
+                        <li>Soft Mustard Velvet</li>
+                        <li>Deep Channel Tufted Back</li>
+                        <li>Gold Iron Legs</li>
+                        <li>Contemporary Design</li>
+                        <li>Product Dimensions : 29" W x 29" D x 29.5" H</li>
+                        <li>Product Weight : 15 Kg</li>
+                        <li>Assembly Required : Yes</li>
+                        <p class="fw-bold px-3">50% Advance payment</p>
+                    </div>
+                    <div class="mustard">
+                        <p>Color: Mustard</p>
+                        <button></button>
+                    </div>
+                    <div class="chair">
+                        <p>Chairs:2 Chairs</p>
+                        <button>2 Chairs</button>
+                    </div>
+                    <div class="productPrice">
+                        <p class="fw-bold pt-3">Price:</p>
+                        <label style="color: #4F5558;">Rs.86,000.00</label>
+                    </div>
+                    <div class="quantity">
+                        <p class="fw-bold">Quantity:</p>
+                        <div class="number">
+                            <p onclick="decrem()">-</p>
+                            <p id="quanto">0</p>
+                            <p onclick="increm()">+</p>
+                        </div>
+                    </div>
+                    <button>Add to Cart</button>
+                    <button style="background-color: #4F5558; margin-left: 15px;">Buy it now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!------------------------------ Bridal section ------------------------------>
+
+    <section class="Bridal pt-5">
+        <div class="container">
+            <div class="row" style="background-color: #7E8D97;">
+                <div class="col-md-5 Embroidered-sec-1">
+                    <h3>Bridal Collection</h3>
+                    <p>Make Your Living Luxuries...</p>
+                    <button style="color: #7E8D97;">Learn More</button>
+                    <img src="Images/bridal.png" width="480px" alt="">
+                </div>
+                <div class="col-md-7">
+                    <div id="cardCarousel">
+                        <section class="carousel-sec">
+                            <div class="swiper mySwiper container">
+                                <div class="swiper-wrapper content">
+                                    <div class="swiper-slide cardCar">
+                                        <div class="card-content">
+                                            <div class="image">
+                                                <img src="Images/Untitled-03.png" alt="">
+                                            </div>
+                                        <div class="name-profession">
+                                            <span class="name">MHS Furniture</span> <br>
+                                            <span class="profession">Light Gray With silver Sequence Bridal Bedding Duvet Set</span> <br>
+                                            <span class="price-1">Rs 21,500.00</span>
+                                            <span style="font-size: 12px; font-weight: 500; padding-left: 20px;"><strike>Rs.25,715.00</strike></span>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide cardCar">
+                                        <div class="card-content">
+                                            <div class="image">
+                                                <img src="Product/1.jpg" alt="">
+                                            </div>
+                                        <div class="name-profession">
+                                            <span class="name">MHS Furniture</span> <br>
+                                            <span class="profession">Maganda Bridal Bedding Duvet Set</span> <br>
+                                            <span class="price-1">Rs 18,750.00</span>
+                                            <span style="font-size: 12px; font-weight: 500; padding-left: 20px;"><strike>Rs.25,715.00</strike></span>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide cardCar">
+                                        <div class="card-content">
+                                            <div class="image">
+                                                <img src="Images/bed.jpg" alt="">
+                                            </div>
+                                        <div class="name-profession">
+                                            <span class="name">MHS Furniture</span> <br>
+                                            <span class="profession">White Bridal Bedding Duvet Set</span> <br>
+                                            <span class="price-1">Rs 18,750.00</span>
+                                            <span style="font-size: 12px; font-weight: 500; padding-left: 20px;"><strike>Rs.25,715.00</strike></span>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </section>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-------------------------------Side Table section ------------------------------>
+
+    <section class="sideTable pt-5">
+        <div class="container">
+            <div class="row" style="background-color: #3F2004;">
+                <div class="col-md-5 Embroidered-sec-1">
+                    <h3>Side Tables</h3>
+                    <p>Furniture Must Have A Personality...</p>
+                    <button style="color: #0774D7;">Learn More</button>
+                    <img src="Images/side table.png" width="480px" alt="">
+                </div>
+                <div class="col-md-7">
+                    <div id="cardCarousel">
+                        <section class="carousel-sec">
+                            <div class="swiper mySwiper container">
+                                <div class="swiper-wrapper content">
+                                    <div class="swiper-slide cardCar">
+                                        <div class="card-content">
+                                            <div class="image">
+                                                <img src="Images/table-2.jpeg" alt="">
+                                            </div>
+                                        <div class="name-profession">
+                                            <span class="name">MHS Furniture</span> <br>
+                                            <span class="profession">Three Leg Side Table</span> <br>
+                                            <span class="from"> From <span class="lineCross"><strike>Rs 15,999.00</strike></span> </span> <br>
+                                            <span class="price-1">Rs 11,999.00</span>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide cardCar">
+                                        <div class="card-content">
+                                            <div class="image">
+                                                <img src="Images/table-3.jpeg" alt="">
+                                            </div>
+                                        <div class="name-profession">
+                                            <span class="name">MHS Furniture</span> <br>
+                                            <span class="profession">Metal Leg and MDF Sheet Rectangle Side Table Living Room</span> <br>
+                                            <span class="price-1">Rs 7,999.00</span>
+                                            <span style="font-size: 12px; font-weight: 500; padding-left: 20px;"><strike>Rs.10,999.00</strike></span>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide cardCar">
+                                        <div class="card-content">
+                                            <div class="image">
+                                                <img src="Images/table-4.jpeg" alt="">
+                                            </div>
+                                        <div class="name-profession">
+                                            <span class="name">MHS Furniture</span> <br>
+                                            <span class="profession">Dutch Match Table</span> <br>
+                                            <span class="price-1">Rs 12,999.00</span>
+                                            <span style="font-size: 12px; font-weight: 500; padding-left: 20px;"><strike>Rs.17,999.00</strike></span>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </section>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!------------------------------ paymet method section ------------------------------>
+
+    <section class="paymetMethod">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Cash On Delivery</h4>
+                    <p>Pay When Your Order Arrives At Home...</p>
+                    <button>Learn More</button>
+                    <div class="delImg">
+                        <img src="Images/delivery.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h4>Online Payments</h4>
+                    <p>Pay Via Debit or Credit Cards...</p>
+                    <button>Learn More</button>
+                    <div class="payImg">
+                        <img src="Images/paymet.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!------------------------------ Newsletter section ------------------------------>
+
+    <div class="newsLetter">
+        <div class="container-fluid">
+            <div class="row">
+                <h4>Newsletter</h4>
+                <p>Sign up Our newsletter to get more updates</p>
+                <div class="inputSub">
+                    <input type="text" placeholder="Your email">
+                    <button>Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!------------------------------ Luxury Bedding section ------------------------------>
+
+    <div class="LuxuryBedding">
+        <div class="container-fluid">
+            <div class="row">
+                <h4>Luxury Bedding Collection</h4>
+                <p>The most Luxurious item is the beautiful bed and beautiful sheet</p>
+            </div>
+        </div>
+    </div>
+
+        <!------------------------------ Address section ------------------------------>
+
+    <section class="addressSec">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 addSec-1">
+                    <div class="d-flex">
+                        <i class='bx bx-package'></i>
+                        <h5>Delivery All Over Pakistan</h5>
+                    </div>
+                    <p>Free Shipping On Orders Over Rs. 2000/-</p>
+                </div>
+                <div class="col-md-3 addSec-1">
+                    <div class="d-flex">
+                        <i class='bx bx-support'></i>
+                        <h5>MyHomeStore Support</h5>
+                    </div>
+                    <p>+92 322 221 9999</p>
+                </div>
+                <div class="col-md-3 addSec-1">
+                    <div class="d-flex">
+                        <i class='bx bx-credit-card'></i>
+                        <h5>Secure payments</h5>
+                    </div>
+                    <p>Pay Via Debit, Credit card Or Cash On Delivery</p>
+                </div>
+                <div class="col-md-3 addSec-1">
+                    <div class="d-flex">
+                        <i class='bx bx-volume-full'></i>
+                        <h5>PRODUCTS QUALITY</h5>
+                    </div>
+                    <p>100% QUALITY ASSURANCE</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!------------------------------ fotter section ------------------------------>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 fot-sec-1">
+                    <h6>ABOUT THE SHOP</h6>
+                    <p>My Home Store is the name of Quality and Excellence. We are delivering finest quality material at your door step. My Home Store is Pakistan’s first online shopping store which is dealing in designer bedding.My Home store is speci ally dealing in Home Textile & Accessories. Quality is our first priority.</p>
+                    <p class="copyRight">© 2023 myhomestore.com.pk <br> Powered By My Home Store</p>
+                </div>
+                <div class="col-md-3 fot-sec-2">
+                    <h6>FOOTER MENU</h6>
+                    <li><a href="">Search</a></li>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Return For Exchange</a></li>
+                    <li><a href="">Shipping and Delivery</a></li>
+                    <li><a href="">Term of Services</a></li>
+                    <li><a href="">FAQ`s</a></li>
+                </div>
+                <div class="col-md-2 fot-sec-3">
+                    <h6>MY HOME STORE</h6>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Search</a></li>
+                    <li><a href="">Wish List</a></li>
+                    <li><a href="">Contact us</a></li>
+                    <li><a href="">FAQ`s</a></li>
+                </div>
+                <div class="col-md-3 fot-sec-4">
+                    <h6>ADDRESS</h6>
+                    <p class="adres">My home Store, batala street, darulehsan town, samundari road, Faisalabad. Pakistan.</p>
+                    <h5>Contact Detail:</h5>
+                    <p class="emailAdress">Email: <a href="">Info@myhomestore.pk</a></p>
+                    <label for="">Call / WhatsApp</label>
+                    <p>Contact no: +92322 2219999</p>
+                    <input type="email" placeholder="Your email"> <br>
+                    <button>Subscribe</button>
+                    <p style="padding-left: 140px; padding-top: 30px;">Follow Us</p>
+                    <span class="footerIcon">
+                        <i class='bx bxl-facebook'></i>
+                        <i class='bx bxl-instagram'></i>
+                        <i class='bx bxl-twitter'></i>
+                        <i class='bx bxl-linkedin'></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- script start here  -->
+
+    <script src="Script.js"></script>
+    <!-- Increm and Decrem Product -->
+    <script>
+        const decrementButton = document.getElementById("decrement");
+        const incrementButton = document.getElementById("increment");
+        const quantityElement = document.getElementById("quant");
+        let quantity = 0;
+        incrementButton.addEventListener("click", () => {
+            quantity++;
+            updateQuantity();
+        });
+        decrementButton.addEventListener("click", () => {
+            if (quantity > 0) {
+                quantity--;
+                updateQuantity();
+            }
+        });
+        function updateQuantity() {
+            quantityElement.textContent = quantity;
+        }
+    </script>
+    <script>
+        var count = 0;
+        function decrem(){
+            if(count>0){
+                document.getElementById('quanto').innerHTML = count;
+                count--;
+            }
+        }
+        function increm(){
+            document.getElementById('quanto').innerHTML = count;
+            count++;
+        }
+    </script>
+    <!-- onclick img show -->
+    <script>
+        function displayImage(imageSrc) {
+            const displayedImage = document.getElementById("displayed-image");
+            const imageElement = document.createElement("img");
+            imageElement.src = imageSrc;
+            displayedImage.innerHTML = "";
+            displayedImage.appendChild(imageElement);
+        }
+    </script>
+    <script>
+        function displayImg(imageSrc) {
+            const displayImg = document.getElementById("display-img");
+            const imgElement = document.createElement("img");
+            imgElement.src = imageSrc;
+            displayImg.innerHTML = "";
+            displayImg.appendChild(imgElement);
+        }
+    </script>
+</body>
+</html>
